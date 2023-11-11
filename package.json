@@ -1,0 +1,29 @@
+{
+  "name": "presente-do-gael",
+  "version": "0.0.0",
+  "private": true,
+  "scripts": {
+    "start": "node ./bin/www",
+    "debug": "cd ./ && nodemon"
+  },
+  "dependencies": {
+    "body-parser": "^1.20.2",
+    "bootstrap": "^5.3.2",
+    "bootstrap-icons": "^1.11.1",
+    "cookie-parser": "~1.4.4",
+    "debug": "~2.6.9",
+    "ejs": "^3.1.9",
+    "express": "^4.18.2",
+    "http-errors": "~1.6.3",
+    "morgan": "~1.9.1",
+    "mysql2": "^3.6.1",
+    "sequelize": "^6.33.0"
+  },
+  "description": "Presente avidado para Gael",
+  "author": "Henrique Belem",
+  "license": "ISC",
+  "devDependencies": {
+    "eslint": "^8.51.0",
+    "nodemon": "^3.0.1"
+  }
+}

@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset='utf-8'>
+  <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+  <title>Cartas para Gael</title>
+  <meta name='viewport' content='width=device-width, initial-scale=1'>
+  <link rel='stylesheet' type='text/css' media='screen' href='bootstrap.min.css'>
+  <link rel='stylesheet' type='text/css' media='screen' href='bootstrap-icons.min.css'>
+  <link rel='stylesheet' type='text/css' media='screen' href='stylesheets/style.css'>
+  <script type='text/js' src='bootstrap.min.js'></script>
+</head>
+<body>
+
+  <a class="btn-0 d-block position-relative mx-auto w-25 m-3 rounded-4 text-center p-3 fs-3" href="./message">
+    <i class="bi bi-plus-circle"></i>
+    <span>
+      mensagem
+    </span>
+  </a>
+  <!--main_body-->
+
+  <main>
+    <div class="birthday-message fs-2 text-center">
+      <b>Feliz Aniversário</b><br>
+      <span>
+        <i class="bi bi-balloon-fill"></i>
+        <b>Gael</b>
+        <i class="bi bi-balloon-fill"></i>
+      </span>
+    </div>
+
+    <div class="d-flex justify-content-center mt-5 ms-5 me-5">
+      <%#for(var i = 0;i < message.length;i++){%>
+        <div class="message card d-block w-50 h-25 p-4">
+          
+          <div class="d-flex flex-column align-items-start gap-3 card-title">
+            <b>De: nome_pessoa</b>
+            <b>Para: Arthur Gael</b>
+          </div>
+              
+          <div class="card-body">
+            <div class="card-text">
+              <p class="fs-4 ">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eveniet non dolorum ipsa debitis totam dignissimos facilis dolorem, aliquid in corporis beatae maxime omnis excepturi suscipit sunt laborum temporibus. Eum, repudiandae.</p>
+            </div>
+          </div>
+        </div>
+        <%#}%>
+      </div>
+  </main>
+</body>
+</html>

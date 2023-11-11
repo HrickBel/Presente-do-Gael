@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>messages</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='bootstrap.min.css'>
+    <link rel='stylesheet' type='text/css' media='screen' href='bootstrap-icons.min.css'>
+    <link rel='stylesheet' type='text/css' media='screen' href='../stylesheets/style.css'>
+    <script src='main.js'></script>
+</head>
+<body> 
+    <a class="btn-0 d-block position-relative mx-auto w-25 m-3 rounded-4 text-center p-3 fs-3" href="../">
+        <i class="bi bi-arrow-left-short"></i>
+        <span>
+            voltar
+        </span>
+    </a>
+    <main>
+        <div class="card mx-auto w-50 shadow rounded-4">
+            <form id="msg" action="/register" method="POST" class="d-flex flex-column p-3 card-body">
+                <label for="name" class="fs-3 p-3">
+                    <span>De:</span>
+                    <input id="person" class="textform" type="text" name="name" placeholder="seu nome vem aqui" maxlength="50">
+                </label>
+
+                <label for="message" class="fs-3 p-3">mensagem</label>
+                <textarea id="message" rows="20" cols="20" maxlength="750" name="message"></textarea>
+
+                <input type="submit" value="enviar" class="button-1 btn btn-lg">
+            </form>
+        </div>
+    </main>
+</body>
+</html>
