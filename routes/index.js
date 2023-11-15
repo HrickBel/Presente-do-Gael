@@ -5,15 +5,18 @@ const bodyParser = require('body-parser');
 var express = require('express');
 var router = express.Router();
 
-let res;
+var result = [];
+
+Message.findAll({attributes:['name','message'],raw:true}).then((rs) =>{
+	result = rs;
+});
 
 /* GET home page. */
 router.get('/', function(req, res, next) {
-	Message.findAll({attributes:['name','message'],raw:true}).then(result => {
-		console.log(result);
-		res = result;
+	Message.findAll({attributes:['name','message'],raw:true}).then((rs) =>{
+		result = rs;
 	});
-	res.render('index',{res:res});
+	res.render('index',{rs:result});
 });
 
 
@@ -24,7 +27,6 @@ router.get('/message', function(req, res, next){
 router.post('/register', async function(req,res){
 	if(req.body.name !== '' && req.body.message !== ''){
 		Message.create({name: req.body.name , message: req.body.message}).then(function(){
-			console.log('mensagem registrada \nnome:',req.body.name,'\nmensagem:', req.body.message);
 			res.redirect('/');
 		});
 	}else{

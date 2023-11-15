@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Gabarito&display=swap');
 
 html{
-  --body-font:16px 'Gabarito', cursive;
+  --body-font:16px 'Gabarito', arial;
   --bg: #8aa8e7;
   --text-main-font: #371ccf;
   --btn-0-color:#2b14aa;
